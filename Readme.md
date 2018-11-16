@@ -11,7 +11,7 @@ def stable_softmax(X):
     exps = np.exp(X - np.max(X))
     return exps / np.sum(exps)
 ```
-During backpropagation, pass to the previous layer ([math](https://deepnotes.io/softmax-crossentropy)) 
+During backpropagation, we pass to the previous layer the derivative of outputs `p` over inputs `X` (see [math](https://deepnotes.io/softmax-crossentropy)) 
 ```
 # Input: row vector X of shape (n, 1)
 # Output: derivative of output p[i] over input X[j]
