@@ -43,6 +43,20 @@ def cross_entropy(X,y):
 
 * tanh: `g = np.tanh(x)` better than logistic as loss function in some cases. Deritative = `1 - g * g`.
 
+* ReLU (Rectified Linear Unit): `g = max(x, 0)`. Why ReLU?
+    * Easy to get derivative: efficient 
+    * Avoid vanishing gradient problem: it saturates to only one direction; unlike tanh and sigmoid which saturate to both direction, i.e. `dg/dx = 0` when `x -> -inf` or `x -> inf`.
+    
+Vanishing Gradient
+---
+Backpropagation after many layers, the gradients become close to 0, rarely change the first `k` input layers.
+Solution:
+* ResNet: use ensembles to make sure the layers are actually shallow.
+* LSTM: for RNN.
+* ReLU: one direction saturation
+* multilevel hierarchy: unsuperivsed pre-training of each layers
+
+
 
 Acknowledgement:
 * [https://deepnotes.io/softmax-crossentropy](https://deepnotes.io/softmax-crossentropy)
