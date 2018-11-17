@@ -45,7 +45,7 @@ def cross_entropy(X,y):
 
 * ReLU (Rectified Linear Unit): `g = max(x, 0)`. Why ReLU?
     * Easy to get derivative: efficient 
-    * Avoid vanishing gradient problem: it saturates to only one direction; unlike tanh and sigmoid which saturate to both direction, i.e. `dg/dx = 0` when `x -> -inf` or `x -> inf`.
+    * Avoid vanishing gradient problem: it saturates to only one direction; unlike tanh and sigmoid which saturate to both direction because their `dg/dx -> 0` when `x -> -inf` or `x -> inf`.
     
 Vanishing Gradient
 ---
