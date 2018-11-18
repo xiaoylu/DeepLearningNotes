@@ -56,6 +56,14 @@ Solution:
 * ReLU: one direction saturation
 * multilevel hierarchy: unsuperivsed pre-training of each layers
 
+Gradient Descent
+---
+* Stochastic Gradient Descent: shuffle the training set for each epoch and feed as mini-batches 
+* Momentum: `velocity = u * velocity - alpha * gradient` so the current `vel` is a weighted sum of previous `vel` and `gradient`
+* AdaGrad: `velocity = - grad / (cache * cache + 1e-8) ` where `cache = sum(grad * 2)` for all grad in the current epoch
+* RMSprop: add a decay rate for AdaGrad since `cache` may accumulate to a large value.
+* Adam: a hybrid of AdaGrad and RMSprop
+
 
 
 Acknowledgement:
