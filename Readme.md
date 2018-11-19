@@ -71,6 +71,7 @@ Avoid Overfitting
     * on model parameters: BatchNorm
     * on the structure: dropout, less parameters (keep model simple)
 * Cross validation on train/dev sets: co-variate shift or data mismatch on test set is another issue
+* Ensemble diverse models
 
 Acknowledgement:
 * [https://deepnotes.io/softmax-crossentropy](https://deepnotes.io/softmax-crossentropy)
