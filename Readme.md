@@ -64,7 +64,13 @@ Gradient Descent
 * RMSprop: add a decay rate for `cache` in AdaGrad since `cache` may accumulate to a large value.
 * Adam: a hybrid of Momentum and RMSprop
 
-
+Avoid Overfitting
+---
+* Regularization: 
+    * on loss function: L1, L2
+    * on model parameters: BatchNorm
+    * on the structure: dropout, less parameters (keep model simple)
+* Cross validation on train/dev sets: co-variate shift or data mismatch on test set is another issue
 
 Acknowledgement:
 * [https://deepnotes.io/softmax-crossentropy](https://deepnotes.io/softmax-crossentropy)
