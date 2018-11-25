@@ -3,8 +3,14 @@ Ensemble Methods
 
 Ensemble methods combine the predictions of several base estimators:
 
-* Averaging method: build estimators independently and average their predictions, such as random forests
-* Boosting method: build estimators sequentially to reduce the bias of previous estimators, such as AdaBoost, gradient boosted trees
+* Averaging method: build estimators independently and average their predictions to reduce total variance, such as random forests
+* Boosting method: build weak estimators sequentially to reduce the bias of previous estimators, such as AdaBoost, gradient boosted trees
+
+Boosting is based on weak learners (high bias, low variance). In terms of decision trees, weak learners are shallow trees, sometimes even as small as decision stumps (trees with two leaves). Boosting reduces error mainly by reducing bias (and also to some extent variance, by aggregating the output from many models).
+
+On the other hand, Random Forest uses fully grown decision trees (low bias, high variance). It tackles the error reduction task in the opposite way: by reducing variance. The trees are made uncorrelated to maximize the decrease in variance, but the algorithm cannot reduce bias (which is slightly higher than the bias of an individual tree in the forest). Hence the need for large, unpruned trees, so that the bias is initially as low as possible.
+
+Please note that unlike Boosting (which is sequential), RF grows trees in parallel.
 
 Decision Trees:
 ---
