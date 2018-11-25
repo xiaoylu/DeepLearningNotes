@@ -2,6 +2,7 @@ Short Python Code for KNN and k-means
 ===
 
 K-nearest-neighbors
+---
 ```
 # knn implementation 
 import numpy
@@ -24,7 +25,9 @@ knn(X, y, x0, 5)
 ```
 
 K-means
+---
 ```
+# k-means algorithm
 import numpy.linalg as LA
 import numpy as np
 
