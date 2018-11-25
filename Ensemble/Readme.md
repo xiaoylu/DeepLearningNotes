@@ -8,7 +8,7 @@ Ensemble methods combine the predictions of several base estimators:
 
 Decision Trees:
 ---
-* Select the attribute which brings the most information gain, i.e. Kullback–Leibler divergence.
+* Select the attribute which brings the most information gain first to split samples, i.e. the one with max Kullback–Leibler divergence.
 
 > `InformationGain(Y, x_i) = H(Y) - H(Y|x_i)`
 where `H()` is the entropy/conditional entropy. In short, decision trees maximize the amount of information gained about the prediction `Y` from observing that attribute `x_i`.
