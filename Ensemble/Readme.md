@@ -4,7 +4,7 @@ Ensemble Methods
 Ensemble methods combine the predictions of several base estimators:
 
 * Averaging method: build estimators independently and average their predictions, such as random forests
-* Boosting method: build estimators sequentially to reduce the bias of previous estimators, such as gradient boosted trees
+* Boosting method: build estimators sequentially to reduce the bias of previous estimators, such as AdaBoost, gradient boosted trees
 
 Decision Trees:
 ---
@@ -26,4 +26,24 @@ weighted by the number of observations the node is responsible for.
         * limit max. depth of trees
         * ensembles / bag more than just 1 tree
         * set stricter stopping criterion on when to split a node further
-  
+        
+* As neighboring data points are more likely to lie within the same leaf of a tree, the RF can perform an implicit, non-parametric density estimation, and it can transform the data into another [feature space](https://scikit-learn.org/stable/auto_examples/ensemble/plot_feature_transformation.html#sphx-glr-auto-examples-ensemble-plot-feature-transformation-py).
+
+* Decision trees have a number of abilities that make them valuable for boosting, namely the ability to handle data of mixed type and the ability to model complex functions.
+
+AdaBoost
+---
+* fit a sequence of weak learners on repeatedly modified versions of the data
+* each subsequent weak learner is thereby forced to concentrate on the examples that are missed by the previous ones
+
+Gradient Boosting Regression Tree (GBRT)
+---
+
+* Same idea, use steepest descent to greedyly fill in the gap between previous predictions and the true labels.
+* Regularization:
+   * Subsampling: a random sub-set of samples to train the next tree
+   * Shrinkage: learning rate to decay the importance of latter trees
+* xgboost used a more regularized model formalization than GBM to control over-fitting, which gives it better performance.
+
+
+
