@@ -18,7 +18,7 @@ importance is calculated by the amount that each attribute split point improves 
 weighted by the number of observations the node is responsible for.
 
 * A tree with few samples and many attributes is very likely to overfit:
-    * External
+    * External data preparation
         * getting the right ratio of samples to number of features
         * performing dimensionality reduction (PCA, ICA, or Feature selection) beforehand
         * sampling an equal number of samples from each class to balance the dataset 
