@@ -1,7 +1,7 @@
 The bias-variance tradeoff 
 ===
 
-one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data.
+One wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data.
 However, these two goals can not be fulfilled at the same time.
 
 * dimensionality reduction and feature selection can decrease variance by simplifying models. 
