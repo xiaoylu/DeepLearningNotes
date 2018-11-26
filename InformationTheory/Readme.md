@@ -30,3 +30,5 @@ Variation of Information
 VI is a measure of the distance between two clusterings. Unlike the mutual information, however, the variation of information is a true metric, in that it obeys the triangle inequality.
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/e87f2a8ba0eb9a98cab84243f14ac3298a7cd10f)
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/VennDiagramIncludingVI.svg/1142px-VennDiagramIncludingVI.svg.png)
