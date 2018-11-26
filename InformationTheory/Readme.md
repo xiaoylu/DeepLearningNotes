@@ -23,4 +23,4 @@ Conditional Entropy
 ---
 CE is the amount of uncertainty remaining about Y after X is known.
 
-!()[https://wikimedia.org/api/rest_v1/media/math/render/svg/c200b367c0f09c8d1faad3319c6c393d3ebbe539]
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/c200b367c0f09c8d1faad3319c6c393d3ebbe539)
