@@ -24,3 +24,9 @@ Conditional Entropy
 CE is the amount of uncertainty remaining about Y after X is known.
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/c200b367c0f09c8d1faad3319c6c393d3ebbe539)
+
+Variation of Information
+---
+VI is a measure of the distance between two clusterings. Unlike the mutual information, however, the variation of information is a true metric, in that it obeys the triangle inequality.
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/e87f2a8ba0eb9a98cab84243f14ac3298a7cd10f)
