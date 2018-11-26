@@ -45,7 +45,7 @@ AdaBoost
 Gradient Boosting Regression Tree (GBRT)
 ---
 
-* Same idea, use steepest descent to greedyly fill in the gap between previous predictions and the true labels.
+* Same idea, use steepest descent to greedily improve predictions.
 * Regularization:
    * Subsampling: a random sub-set of samples to train the next tree
    * Shrinkage: learning rate to decay the importance of latter trees
