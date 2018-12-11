@@ -85,5 +85,6 @@ Choice between width and depth
 
 
 Acknowledgement:
+* Deep Learning book by Ian Goodfellow etc.
 * [https://deepnotes.io/softmax-crossentropy](https://deepnotes.io/softmax-crossentropy)
 * [https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/1-%20Neural%20Networks%20and%20Deep%20Learning](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/1-%20Neural%20Networks%20and%20Deep%20Learning)
