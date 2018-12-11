@@ -3,7 +3,9 @@ Deep Learning Notes
 
 Important Functions
 ---
-* Softmax: stablize it by making the exponent non-positive.
+* Softmax: good for approximating the probability on taking k different values. 
+
+It can be stablized by making the exponent non-positive.
 ```
 # Input: row vector X of shape (n, 1)
 # Output: row vector p of shape (n, 1), each component in range [0, 1]
@@ -43,6 +45,8 @@ def cross_entropy(X,y):
 
 * tanh: `g = np.tanh(x)` better than logistic as loss function in some cases. Deritative = `1 - g * g`.
 
+Problem with `tanh` and `sigmoid` is that they saturate on both sides, making gradient descent low. That's why they are usually used only in the **output** layers of feed-forward networks. (except RNN which has special needs for them)
+
 * ReLU (Rectified Linear Unit): `g = max(x, 0)`. Why ReLU?
     * Easy to get derivative: efficient 
     * Avoid vanishing gradient problem: it saturates to only one direction; unlike tanh and sigmoid which saturate to both direction because their `dg/dx -> 0` when `x -> -inf` or `x -> inf`.
@@ -72,6 +76,13 @@ Avoid Overfitting
     * on the structure: dropout, less parameters (keep model simple)
 * Cross validation on train/dev sets: co-variate shift or data mismatch on test set is another issue
 * Ensemble diverse models
+
+Choice between width and depth
+---
+* With at least one hidden layer, neural network can "aproximate" any function.
+* Depth helps to reduce the number of parameters (the capacity of a network grows **exponently** with depth)
+* But deep networks are harder to train (the motivation of ResNet)
+
 
 Acknowledgement:
 * [https://deepnotes.io/softmax-crossentropy](https://deepnotes.io/softmax-crossentropy)
