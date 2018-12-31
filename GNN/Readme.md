@@ -14,12 +14,12 @@ along the walk sequence
 
 Node2Vec
 ---
-Node2Vec argues that the sampling method for walk sequence construction is not good enough.
+Node2Vec argues that the walk sequence construction is not good enough in DeepWalk.
 
-It applies a second order random walk strategy to sample the neighborhood nodes, interpolate between breadth-first sampling (BFS) and depth-first sampling
-(DFS).
+It applies a second order random walk strategy to sample the neighborhood nodes, 
+interpolate between breadth-first sampling (BFS) and depth-first sampling (DFS).
 
-In this way, the nodes sharing similar roles in a network have similar embeddings
+In this way, the nodes sharing **similar roles** in a network also have similar embeddings
 
 LINE
 ---
