@@ -1,31 +1,31 @@
 Learning to Rank
 ===
 
-Categories:
-* Pointwise:
+Categories
+---
+
+* Pointwise: a scoring system which output a score based on the feature vector
+  * Global order directly
 
 * Pair-wise: the learning task is formalized as classification of object pairs into two categories (correctly ranked and incorrectly ranked).
   * Models:
-    * Rank SVM
+    * RankSVM
+    * RankBoost
     * RankNet (see below for paper review)
   * Pros:
-    * Extract ground truth from users’ clicks-through data
-    * 
+    * easy ground truth extraction from users’ clicks-through data
   * Cons:
+    * quadratic #pairs for training
 
-* List-wise: 
-
-
-
-
-
-
-
-
-
-
-
-
+* List-wise: treat a rank list as the label directly, optimizing MAP or NDCG
+   * Models:
+      * LambdaRank
+      * AdaRank
+      * SoftRank
+      * LambdaMART
+   * Score:
+      * MAP (Mean Average Precision)
+      * NDCG (Normalized Discounted Cumulative Gain)
 
 Review of some key papers
 ===
