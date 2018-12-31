@@ -9,6 +9,8 @@ Categories:
     * Rank SVM
     * RankNet (see below for paper review)
   * Pros:
+    * Extract ground truth from users’ clicks-through data
+    * 
   * Cons:
 
 * List-wise: 
@@ -33,9 +35,11 @@ RankNet - "Learning to rank using gradient descent by microsoft research (ICML 2
 The learning algorithm is given a set of pairs {(a, b)} that each pair is labeled `P_{ab}`, 
 i.e. the posterior probability that a is ranked higher than b
 * Dataset: {(a, b)}, `P_{ab}` 
-* Features: each a or b has many features one can extract (Document keywords etc.)
+* Features: each a or b has many features one can extract from its content (Document keywords etc.)
 
-The key simplification is that
+The **cross entropy** cost function is applied to measure the error of prediction `P_{ij}`.
+
+And the key simplification is that
 ```
           exp(o_ij)
 P_ij = ---------------
@@ -59,4 +63,4 @@ d  cost         d cost
 d weight     d (o_i - o_j)
 ```
 
-So it works similarly as the back-prop.
+So it works similarly as the back-prop, even though we do not know the ground truth for its output `o_i`.
