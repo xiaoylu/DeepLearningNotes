@@ -34,8 +34,11 @@ RankNet - "Learning to rank using gradient descent by microsoft research (ICML 2
 ---
 The learning algorithm is given a set of pairs {(a, b)} that each pair is labeled `P_{ab}`, 
 i.e. the posterior probability that a is ranked higher than b
-* Dataset: {(a, b)}, `P_{ab}` 
-* Features: each a or b has many features one can extract from its content (Document keywords etc.)
+* Input: 
+  * {(a, b)}, `P_{ab}` 
+  * Features: each a or b has many features one can extract from its content (Document keywords etc.)
+* Output:
+  * Given a new pair {(a, b)} output the prob a ranked higher than b, `P_{ab}`.
 
 The **cross entropy** cost function is applied to measure the error of prediction `P_{ij}`.
 
