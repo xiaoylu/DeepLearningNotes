@@ -36,17 +36,31 @@ SVM, dual vs primal
 ---
 https://www.quora.com/Why-is-solving-in-the-dual-easier-than-solving-in-the-primal-What-advantages-do-we-get-from-solving-in-the-dual 
 
-LDA vs. NB: https://www.quora.com/Classification-machine-learning-What-are-the-main-differences-between-the-LDA-Linear-Discriminant-Analysis-and-Naive-Bayes-classifiers
+LDA vs. NB
+---
+https://www.quora.com/Classification-machine-learning-What-are-the-main-differences-between-the-LDA-Linear-Discriminant-Analysis-and-Naive-Bayes-classifiers
 
-LDA vs. PCA: https://www.quora.com/What-is-the-difference-between-LDA-and-PCA-for-dimension-reduction
+LDA vs. PCA
+---
+https://www.quora.com/What-is-the-difference-between-LDA-and-PCA-for-dimension-reduction
 
-Gradient Boosting Tree vs Random Forest: https://stats.stackexchange.com/questions/173390/gradient-boosting-tree-vs-random-forest
+Gradient Boosting Tree vs Random Forest
+---
+https://stats.stackexchange.com/questions/173390/gradient-boosting-tree-vs-random-forest
 
-K-means and hierarchical clustering: https://www.quora.com/What-is-the-difference-between-k-means-and-hierarchical-clustering
+K-means and hierarchical clustering
+---
+https://www.quora.com/What-is-the-difference-between-k-means-and-hierarchical-clustering
 
-Generative vs. discriminative models: https://stats.stackexchange.com/questions/12421/generative-vs-discriminative
+Generative vs. discriminative models
+---
+https://stats.stackexchange.com/questions/12421/generative-vs-discriminative
 
-RNN vs. CNN (at high level): https://datascience.stackexchange.com/questions/11619/rnn-vs-cnn-at-a-high-level
+RNN vs. CNN (at high level)
+---
+https://datascience.stackexchange.com/questions/11619/rnn-vs-cnn-at-a-high-level
 
-Word2vec vs. GloVe (word embeddings): https://www.quora.com/How-is-GloVe-different-from-word2vec
+Word2vec vs. GloVe (word embeddings)
+---
+https://www.quora.com/How-is-GloVe-different-from-word2vec
 
