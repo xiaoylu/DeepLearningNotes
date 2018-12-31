@@ -32,5 +32,10 @@ and the empirical distributions.
 
 Deep Models
 ===
+SDNE
+---
+Deep autoencoder encode node vector `x` as `y` and mininize the Laplacian eigenmaps between `y_i` and `y_j` if `(i,j) in E`.
+Also, the second order proximity is perserved as the decoded `x'` should be similar to the node vector `x`.
+
 Graph Conv (Kipf & Welling)
 ---
