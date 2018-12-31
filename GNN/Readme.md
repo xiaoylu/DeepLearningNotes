@@ -3,6 +3,8 @@ Graph Neural Network
 
 GNN takes relational data as input and outputs the node embeddings
 
+Shallow Models
+===
 DeepWalk
 ---
 As in Skip-Gram, each vertex v in DeepWalk also has two representation vectors :
@@ -28,5 +30,7 @@ LINE explicitly construct the second order proximity. It minimizes the KL-diverg
 * second order proximity as `softmax(c, v)` given a set of context nodes `{c1,c2,..,c_k}`.
 and the empirical distributions.
 
+Deep Models
+===
 Graph Conv (Kipf & Welling)
 ---
