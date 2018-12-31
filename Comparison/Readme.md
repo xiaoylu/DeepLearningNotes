@@ -30,11 +30,13 @@ LR vs SVM:
 ---
 https://stats.stackexchange.com/questions/95340/comparing-svm-and-logistic-regression
 
-
+Use SVM with a nonlinear kernel if you have reason to believe your data won't be linearly separable (or you need to be more robust to outliers than LR will normally tolerate). Otherwise, just try logistic regression first and see how you do with that simpler model. If logistic regression fails you, try an SVM with a non-linear kernel like a RBF.
 
 SVM, dual vs primal
 ---
 https://www.quora.com/Why-is-solving-in-the-dual-easier-than-solving-in-the-primal-What-advantages-do-we-get-from-solving-in-the-dual 
+
+
 
 LDA vs. NB
 ---
@@ -44,13 +46,16 @@ LDA vs. PCA
 ---
 https://www.quora.com/What-is-the-difference-between-LDA-and-PCA-for-dimension-reduction
 
-Gradient Boosting Tree vs Random Forest
+Gradient Boosting Tree vs. Random Forest
 ---
 https://stats.stackexchange.com/questions/173390/gradient-boosting-tree-vs-random-forest
 
-K-means and hierarchical clustering
+K-means vs. hierarchical clustering
 ---
 https://www.quora.com/What-is-the-difference-between-k-means-and-hierarchical-clustering
+
+KNN vs. K-means
+---
 
 Generative vs. discriminative models
 ---
