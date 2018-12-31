@@ -18,11 +18,23 @@ https://www.quora.com/What-is-the-difference-between-logistic-regression-and-Nai
 * Navie Bayes assume naive conditional independence that `P(y|x1,x2..xn) = P(y|x1) P(y|x2) .. P(y|xn)`; LR allows correlation between features.
 * Naive Bayes is fast estimating `P(y)*P(y|x1,x2..xn)` by Maximum A Posteriori (MAP); LR requires training by grad descent
 * LR can overfit when #features >> #samples; Naive Bayes work fine due to its simplicity
-* Priors improve Naive Bayes; Regularization improve LR
+* Priors improve Naive Bayes; Regularization improve Logistic Regression
 
-LR vs SVM: https://stats.stackexchange.com/questions/95340/comparing-svm-and-logistic-regression
+Linear Regression vs Logistic Regression
+---
+https://stats.stackexchange.com/questions/29325/what-is-the-difference-between-linear-regression-and-logistic-regression/29326#29326
 
-SVM, dual vs primal: https://www.quora.com/Why-is-solving-in-the-dual-easier-than-solving-in-the-primal-What-advantages-do-we-get-from-solving-in-the-dual 
+Logistic regression falls into the form of genelarized linear model (GLM) that `P(Y) = sigmoid(AX + b)` where `sigmoid-1()` is the link function `link_function(P(Y)) = linear_regression(X)`. Note that in GLM, the output is continuous while LR outputs a prob. `P(Y)`.
+
+LR vs SVM: 
+---
+https://stats.stackexchange.com/questions/95340/comparing-svm-and-logistic-regression
+
+
+
+SVM, dual vs primal
+---
+https://www.quora.com/Why-is-solving-in-the-dual-easier-than-solving-in-the-primal-What-advantages-do-we-get-from-solving-in-the-dual 
 
 LDA vs. NB: https://www.quora.com/Classification-machine-learning-What-are-the-main-differences-between-the-LDA-Linear-Discriminant-Analysis-and-Naive-Bayes-classifiers
 
