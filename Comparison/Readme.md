@@ -1,11 +1,24 @@
 Comparison Questions
 ===
-
+Acknowledgement: the list of comparison questions is originally collected by [Shujian Liu](https://www.linkedin.com/in/shujian-liu/).
 Source: https://www.linkedin.com/pulse/ml-2-shujian-liu/
 
-L1 and L2 regularization: https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when
+L1 and L2 regularization: 
+---
+https://www.quora.com/What-is-the-difference-between-L1-and-L2-regularization-How-does-it-solve-the-problem-of-overfitting-Which-regularizer-to-use-and-when
 
-LR vs NB: https://www.quora.com/What-is-the-difference-between-logistic-regression-and-Naive-Bayes
+L1 encourages sparsity of the weight vector (Lasso) while L2 penalizes large weight dramatically (due to the sqr in Ridge). Elastic Net is a good choice.
+
+Logistic Regression vs Naive Bayes
+---
+https://www.quora.com/What-is-the-difference-between-logistic-regression-and-Naive-Bayes
+[Short review of Logistic Regression](https://drive.google.com/file/d/1LSAQsQndQUmLO45NOMSwlFAvy1XGfhqH/view)
+
+* Navie Bayes is a Generative model while Logistic Regression is a Discriminative model
+* Navie Bayes assume naive conditional independence that `P(y|x1,x2..xn) = P(y|x1) P(y|x2) .. P(y|xn)`; LR allows correlation between features.
+* Naive Bayes is fast estimating `P(y)*P(y|x1,x2..xn)` by Maximum A Posteriori (MAP); LR requires training by grad descent
+* LR can overfit when #features >> #samples; Naive Bayes work fine due to its simplicity
+* Priors improve Naive Bayes; Regularization improve LR
 
 LR vs SVM: https://stats.stackexchange.com/questions/95340/comparing-svm-and-logistic-regression
 
