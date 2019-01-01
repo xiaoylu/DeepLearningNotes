@@ -39,3 +39,8 @@ Also, the second order proximity is perserved as the decoded `x'` should be simi
 
 Graph Conv (Kipf & Welling)
 ---
+For each layer, `H^l = ReLU(L H^(l-1))` where `L` is the normalized graph laplacian `D^-1/2 A D^-1/2`.
+
+Applications
+===
+
