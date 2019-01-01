@@ -3,6 +3,8 @@ Graph Neural Network
 
 GNN takes relational data as input and outputs the node embeddings
 
+Slides for a general review: http://tkipf.github.io/misc/SlidesCambridge.pdf
+
 Shallow Models
 ===
 DeepWalk
@@ -39,6 +41,8 @@ Also, the second order proximity is perserved as the decoded `x'` should be simi
 
 Graph Conv (Kipf & Welling)
 ---
+https://tkipf.github.io/graph-convolutional-networks/
+
 For each layer, `H^l = ReLU(L H^(l-1))` where `L` is the normalized graph laplacian `D^-1/2 A D^-1/2`. The input is a set of node feature vectors
 
 Applications
