@@ -32,15 +32,18 @@ and the empirical distributions.
 
 Deep Models
 ===
-SDNE
+SDNE (autoencoder)
 ---
 Deep autoencoder encode node vector `x` as `y` and mininize the Laplacian eigenmaps between `y_i` and `y_j` if `(i,j) in E`.
 Also, the second order proximity is perserved as the decoded `x'` should be similar to the node vector `x`.
 
 Graph Conv (Kipf & Welling)
 ---
-For each layer, `H^l = ReLU(L H^(l-1))` where `L` is the normalized graph laplacian `D^-1/2 A D^-1/2`.
+For each layer, `H^l = ReLU(L H^(l-1))` where `L` is the normalized graph laplacian `D^-1/2 A D^-1/2`. The input is a set of node feature vectors
 
 Applications
 ===
+
+Recommendations
+---
 
