@@ -27,7 +27,7 @@ weighted by the number of observations the node is responsible for.
     * External data preparation
         * getting the right ratio of samples to number of features
         * performing dimensionality reduction (PCA, ICA, or Feature selection) beforehand
-        * sampling an equal number of samples from each class to balance the dataset 
+        * stratified sampling: sampling an equal number of samples from each class to balance the dataset 
     * Internal regularization:
         * limit max. depth of trees
         * ensembles / bag more than just 1 tree
@@ -46,8 +46,9 @@ Gradient Boosting Regression Tree (GBRT)
 ---
 
 * Same idea, use steepest descent to greedily improve predictions.
+* must be regression tree to comput the residual
 * Regularization:
-   * Subsampling: a random sub-set of samples to train the next tree
+   * Subsampling: a random sub-set of samples to train the next tree (solves the imbalanced dataset problem)
    * Shrinkage: learning rate to decay the importance of latter trees
 * xgboost used a more regularized model formalization than GBM to control over-fitting, which gives it better performance.
 
