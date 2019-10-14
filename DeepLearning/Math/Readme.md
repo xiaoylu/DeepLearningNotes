@@ -1,6 +1,9 @@
 Deep Learning Notes
 ===
 
+[https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/1-%20Neural%20Networks%20and%20Deep%20Learning](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/1-%20Neural%20Networks%20and%20Deep%20Learning)
+
+
 Important Functions
 ---
 * Softmax: good for approximating the probability on taking k different values. 
@@ -84,7 +87,7 @@ Choice between width and depth
 * But deep networks are harder to train (the motivation of ResNet)
 
 
-Acknowledgement:
+Links
+---
 * Deep Learning book by Ian Goodfellow etc.
 * [https://deepnotes.io/softmax-crossentropy](https://deepnotes.io/softmax-crossentropy)
-* [https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/1-%20Neural%20Networks%20and%20Deep%20Learning](https://github.com/mbadry1/DeepLearning.ai-Summary/tree/master/1-%20Neural%20Networks%20and%20Deep%20Learning)
