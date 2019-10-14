@@ -79,7 +79,7 @@ Avoid Overfitting
 
 Choice between width and depth
 ---
-* With at least one hidden layer, neural network can "aproximate" any function.
+* With at least one hidden layer, neural network is capable of "approximating" any function.
 * Depth helps to reduce the number of parameters (the capacity of a network grows **exponently** with depth)
 * But deep networks are harder to train (the motivation of ResNet)
 
