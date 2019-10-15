@@ -5,15 +5,14 @@ Tensorflow
  
 Tensorflow is a library for building and running computational graphs `tf.Graph` which comprised of `tf.Tensor`s (tensors) and `tf.Operation`s ("ops"). 
 
-A call to `tf.Session.run` would specify the values of any `tf.Tensor` in a graph (while the ops have no value). Tensors contains `tf.Variable`, `tf.constant`, `tf.placeholder` and `tf.SparseTensor`. With the exception of `tf.Variable`, the value of a tensor is immutable, which means that in each `tf.Sesssion.run`, tensors only have a single value.  
+A call to `tf.Session.run` would specify the values of any `tf.Tensor` in a graph. `tf.Tensor` class has `eval()` method while `tf.Operation` class has `run()` method. Tensors contains `tf.Variable`, `tf.constant`, `tf.placeholder` and `tf.SparseTensor`.
 
 `tf.layers` are the preferred way to add **trainable parameters** to a graph. 
 The layer infers the number of its internal variables by inspecting the input. 
 But the output size must be specified using the `units` argument.
 
-`tf.losses` includes commonly used loss functions.
-
 ```python
+# v1.0
 x = tf.constant([[1], [2], [3], [4]], dtype=tf.float32)
 y_true = tf.constant([[0], [-1], [-2], [-3]], dtype=tf.float32)
 
