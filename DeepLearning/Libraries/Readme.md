@@ -1,8 +1,8 @@
 Tensorflow
----
+===
 
 [v1 Guide](https://github.com/tensorflow/docs/tree/master/site/en/r1/guide)
- 
+---
 Tensorflow is a library for building and running computational graphs `tf.Graph` which comprised of `tf.Tensor`s (tensors) and `tf.Operation`s ("ops"). 
 
 A call to `tf.Session.run` would specify the values of any `tf.Tensor` in a graph. `tf.Tensor` class has `eval()` method while `tf.Operation` class has `run()` method. Tensors contains `tf.Variable`, `tf.constant`, `tf.placeholder` and `tf.SparseTensor`.
@@ -36,6 +36,14 @@ for i in range(100):
 
 print(sess.run(y_pred))
 ```
+
+Keras
+---
+
+Within TF2, `tf.keras` provides high-level API.
+
+
+
 
 Comparison between Tensorflow and PyTorch
 ---
