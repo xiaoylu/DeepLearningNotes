@@ -12,3 +12,10 @@ log-loss = binary cross entropy
 ---
 * logistic regression (sigmoid as activation) uses log-loss as loss function
 
+Softmax loss = softmax activation + cross-entropy loss
+---
+* Multi-class classification problems
+
+Sigmoid loss = sigmoid activation + cross-entropy loss
+---
+* multi-label classification
